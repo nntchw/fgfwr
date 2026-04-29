@@ -1,4 +1,4 @@
-#include "uci/fen.hh"
+#include "fci/fen.hh"
 
 #include "types/castling_rights.hh"
 #include "types/color.hh"
@@ -11,7 +11,7 @@
 
 using namespace fgfwr::types;
 
-auto fgfwr::uci::parse_fen(std::string_view fen) -> Position {
+auto fgfwr::fci::parse_fen(std::string_view fen) -> Position {
     Position pos;
 
     int i = 0;

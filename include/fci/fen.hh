@@ -3,7 +3,7 @@
 #include "types/position.hh"
 #include <string_view>
 
-namespace fgfwr::uci {
+namespace fgfwr::fci {
 
 /// FEN string of the starting position
 inline constexpr std::string_view STARTPOS_FEN =
@@ -19,4 +19,4 @@ inline constexpr std::string_view STARTPOS_FEN =
 /// - Behavior is undefined if the FEN string is malformed.
 auto parse_fen(std::string_view) -> types::Position;
 
-} // namespace fgfwr::uci
+} // namespace fgfwr::fci
