@@ -6,7 +6,7 @@
 #include <string>
 #include <vector>
 
-namespace fgfwr::util {
+namespace fgfwr::utils {
 
 /// Split string at whitespaces
 inline auto tokenize(const std::string& str) -> std::vector<std::string> {
@@ -18,4 +18,4 @@ inline auto tokenize(const std::string& str) -> std::vector<std::string> {
     return tokens;
 }
 
-} // namespace fgfwr::util
+} // namespace fgfwr::utils
