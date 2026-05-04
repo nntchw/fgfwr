@@ -59,7 +59,7 @@ struct Move {
     ///
     /// Does not check if the move itself is actually a promotion.
     [[nodiscard]] auto promote_to() const -> Piece {
-        return static_cast<Piece::Value>(std::to_underlying(flag) & 3 + 1);
+        return static_cast<Piece::Value>((std::to_underlying(flag) & 3) + 1);
     }
 
     [[nodiscard]] auto is_null() const -> uint8_t { return to.is_null(); }
